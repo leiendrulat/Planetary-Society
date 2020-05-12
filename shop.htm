@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS 131 Final Project</title>
+  <link rel="stylesheet" href="final.css">
+  <link href='https://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .main1 {
+      -ms-flex: 100%;
+      /* IE10 */
+      flex: 100%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .square {
+      width: 250px;
+      height: 275px;
+      position: fixed;
+      top: 0;
+      right: 5px;
+      background-color: rgba(128, 128, 128, 0.288);
+      border-radius: 10px;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>The Planetary Society of America</h1>
+    <div class="moon"></div>
+  </div>
+
+  <div class="navbar">
+    <a href="Final Project.htm">Home</a>
+    <a href="">Shop By Category</a>
+    <a href="">Telescopes</a>
+    <a href="contact.htm" class="right">Contact</a>
+  </div>
+  <div class="main1">
+    <br>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="app1.png" style="width:100%;">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="shopimage.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="shopimage2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="tele.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="tele2.jpg" style="width:100%">
+      </div>
+    </div>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <br>
+    <h2>Shop by Category</h2>
+    <div class="row">
+      <div class="column1" style="background-color:rgb(4, 4, 236);">
+        <h3>Apparel</h3>
+        <ul>
+          <li id="T">T-Shirts</li>
+          <li id="H">Hoodies</li>
+          <li id="C">Caps</li>
+        </ul>
+      </div>
+      <div class="column1" style="background-color:rgb(4, 4, 236);">
+        <h3>Educational Items</h3>
+        <ul>
+          <li id="Astro">Astronomy Books</li>
+          <li id="Solar">Solar System Books</li>
+          <li id="Color">Coloring Books for Kids</li>
+          <li id="Dv">Dvds</li>
+        </ul>
+      </div>
+      <div class="column1" style="background-color: rgb(4, 4, 236);">
+        <h3>Others</h3>
+        <ul>
+          <li id="M">Mugs</li>
+          <li id="Tum">Tumblers</li>
+          <li id="K">Key Chains</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <h2>Telescopes</h2>
+    <ul>
+      <li>Telescopes</li>
+      <li>Binoculars</li>
+    </ul>
+  </div>
+  <div class="square">
+
+    <ul>
+      <li>
+        <div class="hide" id="Ts">T-Shirts - $20
+        </div>
+        <div class="hide" id="Hood">Hoodies - $50
+        </div>
+        <div class="hide" id="Cap">Caps - $25
+        </div>
+        <div class="hide" id="Ast">Astronomy Books - $20
+        </div>
+        <div class="hide" id="Sol">Solar System Books - $15
+        </div>
+        <div class="hide" id="Col">Coloring Books for Kids- $12
+        </div>
+        <div class="hide" id="Dvd">Dvds - $25
+        </div>
+        <div class="hide" id="Mu">Mugs - $12
+        </div>
+        <div class="hide" id="Tumb">Tumblers - $16 </div>
+        <div class="hide" id="Ke">Key Chain - $5
+        </div>
+        <div><span><b>My Cart Total:</b>
+            <div id="total">
+          </span></div>
+        <button onclick="show()"><B>Buy</B></button>
+
+
+
+        <script>
+
+          function show() {
+            for (i = 0; i < Totalarray.length; i++) {
+              dl[i];
+              alert(Totalarray[i]);
+
+            }
+          }
+        </script>
+  </div>
+
+  </li>
+  </ul>
+  </div>
+  <br>
+  <div class="footer">
+    <h2>1600 E. Golf Road, Des Plaines, IL 60016</h2>
+    <h3>Tel# 847-635-1600</h3>
+
+  </div>
+  <div class="space">&nbsp;</div>
+  <p>&copy LEndrulat</p>
+  <script>
+    var dl = {
+      TShirts: 20,
+      Hoodies: 50,
+      Caps: 25,
+      AstronomyBooks: 20,
+      SolarSystemBooks: 15,
+      ColoringBooksforKids: 12,
+      Dvds: 25,
+      Mugs: 12,
+      Tumblers: 16,
+      KeyChains: 5,
+      tt: 0,
+      Total: 0,
+    }
+
+    $(".hide").css('display', 'none');
+    $("#T").click(function () {
+
+
+      if ($("#Ts").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.TShirts;
+        update(dl.Total);
+
+
+        $("#Ts").removeClass("show");
+      } else if ($("#Ts").hasClass("show") == false) {
+
+        $("#Ts").addClass("show");
+        dl.Total = dl.tt + dl.TShirts;
+        update(dl.Total);
+
+      }
+
+
+    });
+
+    $("#H").click(function () {
+
+      if ($("#Hood").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.Hoodies;
+        update(dl.Total);
+
+        $("#Hood").removeClass("show");
+      } else if ($("#Hood").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.Hoodies;
+        update(dl.Total);
+
+        $("#Hood").addClass("show");
+      }
+
+
+    });
+
+    $("#C").click(function () {
+
+      if ($("#Cap").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.Caps;
+        update(dl.Total);
+        $("#Cap").removeClass("show");
+      } else if ($("#Cap").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.Caps;
+        update(dl.Total);
+        $("#Cap").addClass("show");
+      }
+
+
+    });
+
+    $("#Astro").click(function () {
+
+      if ($("#Ast").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.AstronomyBooks;
+        update(dl.Total);
+        $("#Ast").removeClass("show");
+      } else if ($("#Ast").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.AstronomyBooks;
+        update(dl.Total);
+        $("#Ast").addClass("show");
+      }
+
+
+    });
+
+    $("#Solar").click(function () {
+
+      if ($("#Sol").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.SolarSystemBooks;
+        update(dl.Total);
+        $("#Sol").removeClass("show");
+      } else if ($("#Sol").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.SolarSystemBooks;
+        update(dl.Total);
+        $("#Sol").addClass("show");
+      }
+
+
+    });
+
+    $("#Color").click(function () {
+
+      if ($("#Col").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.ColoringBooksforKids;
+        update(dl.Total);
+        $("#Col").removeClass("show");
+      } else if ($("#Col").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.ColoringBooksforKids;
+        update(dl.Total);
+        $("#Col").addClass("show");
+      }
+
+
+    });
+
+    $("#Dv").click(function () {
+
+      if ($("#Dvd").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.Dvds;
+        update(dl.Total);
+        $("#Dvd").removeClass("show");
+      } else if ($("#Dvd").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.Dvds;
+        update(dl.Total);
+        $("#Dvd").addClass("show");
+      }
+
+
+    });
+
+    $("#M").click(function () {
+
+      if ($("#Mu").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.Mugs;
+        update(dl.Total);
+        $("#Mu").removeClass("show");
+      } else if ($("#Mu").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.Mugs;
+        update(dl.Total);
+        $("#Mu").addClass("show");
+      }
+
+
+    });
+
+    $("#Tum").click(function () {
+
+      if ($("#Tumb").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.Tumblers;
+        update(dl.Total);
+        $("#Tumb").removeClass("show");
+      } else if ($("#Tumb").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.Tumblers;
+        update(dl.Total);
+        $("#Tumb").addClass("show");
+      }
+
+
+    });
+
+    $("#K").click(function () {
+
+      if ($("#Ke").hasClass("show") == true) {
+        dl.Total = dl.tt - dl.KeyChains;
+        update(dl.Total);
+        $("#Ke").removeClass("show");
+      } else if ($("#Ke").hasClass("show") == false) {
+        dl.Total = dl.tt + dl.KeyChains;
+        update(dl.Total);
+        $("#Ke").addClass("show");
+      }
+
+
+    });
+
+
+    var Totalarray = [];
+    var Totalname = [];
+    function update(dl) {
+      Totalarray.push(dl);
+      Totalname.push(dl);
+      var sum = Totalarray.reduce(function (a, b) { return a + b; }, 0);
+      var sumname = Totalname.reduce(function (a, b) { return a + b; }, 0);
+      document.getElementById('total').innerHTML = sum;
+      document.getElementById('total').innerHTML = sumname;
+    }
+    //tshirt, hoodie, caps, astronomy books,solar system books, coloring ,dvd,mugs,tumbler,Keychain
+    //     var Tl = {
+    //       T-Shirts: 25,
+    // Hoodies: 50,
+    // Caps: 25,
+    // Astronomy Books: 20,
+    // Solar System Books: 15,
+    // Coloring Books for Kids: 12,
+    // Dvds: 25,
+    // Mugs: 12,
+    // Tumblers: 16,
+    // Key Chains: 5,
+    //     }
+
+
+
+
+
+
+
+
+    function updateTotal(price) {
+
+      total += parseFloat(price);
+      $("#total").html(total.toFixed(2));
+      $(".shoppingCartTotal").effect("bounce");
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+
+
+</body>
+
+</html>

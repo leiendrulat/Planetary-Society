@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS 131 Final Project</title>
+    <link rel="stylesheet" href="final.css">
+    <link href='https://fonts.googleapis.com/css?family=UnifrakturCook:700' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <h1>The Planetary Society of America</h1>
+        <div class="moon"></div>
+    </div>
+
+    <div class="navbar">
+        <a href="Final Project.htm">Home</a>
+        <a href="reg.htm">Registration</a>
+        <a href="educ.htm">Educational</a>
+        <a href="shop.htm">Shopping</a>
+        <a href="alert.htm">Alert</a>
+        <a href="contact.htm" class="right">Contact</a>
+    </div>
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Registration Form</h2>
+            <p>Please fill-up the form and submit to us for the following information:</p>
+            <p><b>Note:</b>Kids below 6 years old should be accompanied by an adult.</p>
+            <p>Night Sleep-over please bring your own sleeping bag.</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="stars.gif" style="width:100%; border-radius: 10px;">
+            </div>
+            <script>
+                function getOption() {
+                    var sem = document.getElementById("seminar1").checked;
+                    var semi = document.getElementById("seminar2").checked;
+                    var A = document.getElementById("quantity").value;
+                    var Whole = {
+                        cost: 100,
+
+                    }
+                    var Half = {
+                        cost: 125,
+
+                    }
+
+                    switch (A) {
+                        case "1":
+                            if (sem == true && semi == true) {
+                                addtoarray(Whole.cost, Half.cost);
+
+                            }
+                            else if (semi == true) {
+                                addtoarray(Half.cost);
+                            } else if (sem == true) {
+                                addtoarray(Whole.cost);
+                            }
+                            break;
+                        case "2":
+                            if (sem == true && semi == true) {
+                                var totals = Whole.cost + Half.cost;
+
+                                addtoarray(totals * 2);
+                            }
+                            else if (semi == true) {
+                                addtoarray(Half.cost * 2);
+                            } else if (sem == true) {
+                                addtoarray(Whole.cost * 2);
+                            }
+                            break;
+                        case "3":
+                            if (sem == true && semi == true) {
+                                var totals = Whole.cost + Half.cost;
+
+                                addtoarray(totals * 3);
+                            }
+                            else if (semi == true) {
+                                addtoarray(Half.cost * 3);
+                            } else if (sem == true) {
+                                addtoarray(Whole.cost * 3);
+                            }
+                            break;
+                        case "4":
+                            if (sem == true && semi == true) {
+                                var totals = Whole.cost + Half.cost;
+
+                                addtoarray(totals * 4);
+                            }
+                            else if (semi == true) {
+                                addtoarray(Half.cost * 4);
+                            } else if (sem == true) {
+                                addtoarray(Whole.cost * 4);
+                            }
+                    }
+
+                    function addtoarray(d, b) {
+                        var totalarray = [];
+                        totalarray.push(d);
+                        if (typeof b == "undefined") {
+
+                        } else {
+                            totalarray.push(b);
+                        }
+
+
+                        var sum = totalarray.reduce(function (a, b) { return a + b; }, 0);
+                        document.getElementById('total').innerHTML = "$ " + sum;
+
+                    }
+                }
+            </script>
+            <div class="column">
+                <form action="webcourses@aol.com">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">Email Address</label>
+                    <input type="text" placeholder="Email*" required>
+                    <p>Selection for the Seminar:</p>
+                    <input type="checkbox" id="seminar1" name="seminar1" value="$100">
+                    <label for="seminar1">All day seminar for $100 </label><br>
+                    <input type="checkbox" id="seminar2" name="seminar2" value="$125">
+                    <label for="seminar2">Night Sleep-over with Breakfast cost $125</label><br><br>
+                    <p>Number of PAX:</p>
+                    <select id="quantity">
+                        <option value="0">Choose Option...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <button onclick="getOption()">Total</button>
+                    <div class="space">&nbsp;</div>
+                    <input type="submit" value="Submit">
+                    <br>
+                    <h3 id="total"></h3>
+                    <p>All net proceeds will go to the Planetary Society’s research program.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <h2>1600 E. Golf Road, Des Plaines, IL 60016</h2>
+        <p align="center">Tel# 847-635-1600</p>
+    </div>
+
+    <div class="space">&nbsp;</div>
+    <p>&copy LEndrulat</p>
+    </div>
+</body>
+
+</html>
